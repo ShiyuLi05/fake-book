@@ -139,11 +139,11 @@ function createPost() {
 function newPostTemplate() {
     const newPost = create('div');
     const today = new Date();
-    let img = select('.pic').innerHTML;
+    let img = select('.pix').innerHTML;
 
     newPost.innerHTML = 
     `
-    <div class='header'>
+    <div class='content-header'>
         ${img}
         <h2>${me.userName}</h2>
         <p>${today.toDateString()}</p>
@@ -198,6 +198,7 @@ document.getElementById('file-read').onchange = function() {
 // modal
 const profile = select('.profile');
 const detail = select('.detail');
+const pic = select('.pic');
 function getUserInfo() {
     profile.innerText = `#${me.id}\n${me.userName}\n${me.email}`;
 }
@@ -206,7 +207,13 @@ function getUserDetail() {
 }
 function menuToggle() {
     const toggleMenu = select('.menu');
+
+    /*if (toggleMenu.style.visibility == 'hidden') {
+        toggleMenu.style.visibility = 'visible';
+    } else {
+        toggleMenu.style.visibility = 'hidden';
+    }*/
     toggleMenu.classList.toggle('active');
+    getUserInfo();
+    getUserDetail();
 }
-getUserInfo();
-getUserDetail();

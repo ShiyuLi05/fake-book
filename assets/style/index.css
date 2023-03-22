@@ -205,18 +205,18 @@ button:hover {
 /*    post                                              */
 /* ---------------------------------------------------- */
 
-.header {
+.content-header {
     display: flex;
 }
-.header img {
+.content-header img {
     margin-right: 0.8rem;
 }
-.header h2 {
+.content-header h2 {
     font-weight: 400;
     line-height: 3rem;
     margin-left: 0.2rem;
 }
-.header p {
+.content-header p {
     display: inline;
     margin: auto;
     margin-right: 0.8rem;
@@ -254,10 +254,13 @@ button:hover {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .menu {
+    width: 12rem;
+    height: 16.25rem;
     position: absolute;
-    top: -20px;
-    right: 50px;
-    padding: 10px 20px;
+    top: 50%;
+    right: 15%;
+    margin-right: -6rem;
+    padding: 0.5rem 1rem;
     background-color: rgba(33, 42, 64, 0.9);
     border-radius: 0.4rem;
     transition: 0.5s;
@@ -265,18 +268,16 @@ button:hover {
     opacity: 0;
 }
 .menu.active {
-    top: 80px;
     visibility: visible;
+    top: 150%;
     opacity: 1;
 }
-
 .menu p {
     font-weight: 600;
     text-align: center;
     font-size: 1rem;
     padding-bottom: 1rem;
     color: #d8d8d9;
-    line-height: 1.5;
     transition: 0.5s;
 }
 .menu span {

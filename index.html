@@ -39,14 +39,14 @@
                         <li><a href="#">Settings</a></li>
                     </ul>
                     <div class="pic">
-                        <div onclick="menuToggle()">
+                        <div onclick="menuToggle()" class="pix">
                             <img class="user-pic" src="./assets/img/self.jpg" alt="">
                         </div>
                         <div class="menu">
                             <p>Hello!</p>
                             <span class="profile"></span>
-                                <p style="padding-top:1rem;">Pages and Groups:</p>
-                                <span class="detail"></span>
+                            <p style="padding-top:1rem;">Pages and Groups:</p>
+                            <span class="detail"></span>
                         </div>
                     </div>
                     <div class="toggle-btn" style="width: 28px;">
@@ -61,28 +61,24 @@
                     <li><a href="#">My ads</a></li>
                     <li><a href="#">Settings</a></li>
                 </div>
-
-                <div class="modal">
-                    <div class="modal-menu"></div>
-                </div>
             </div>
         </header>
 
         <main class="container">
-            <section class="grid">
+            <section>
                 <form>
                     <textarea placeholder="What's new, Shiyu?"></textarea>
                     <div class="readfile">
                         <div style="display: flex;">
                             <label for="file-read" class="icon"><i class="fa-solid fa-image fa-lg" style="color: #bdbdbf;"></i></label>
-                            <input type="file" id="file-read" multiple required>
+                            <input type="file" id="file-read" accept="image/*">
                             <div class="message"></div>
                         </div>
                         <button type="button" class="post-btn">Post</button>
                     </div>
                 </form>
 
-                <div class="subgrid fb"></div>
+                <div class="fb"></div>
             </section>
         </main>
     </body>
