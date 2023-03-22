@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="author" content="Shiyu Li"/>
+        <meta name="description" content="Fake Book"/>
+        <meta name="keywords"content="html,css,web,web developmet,seo">
+        <title>Fake Book</title>
+        <link 
+            rel="shortcut icon" 
+            href="./assets/img/cat-face.png" 
+            type="picture/x-icon"
+        >
+        <link rel="stylesheet" href="./assets/style/index.css" media="all"/>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" 
+        >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./assets/script/index.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="flex container">
+                <nav>
+                    <div class="title">FakeBook</div>
+                    <ul class="links">
+                        <li><a href="#">Friends</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Groups</a></li>
+                        <li><a href="#">My ads</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                    <div class="pic">
+                        <div onclick="menuToggle()">
+                            <img class="user-pic" src="./assets/img/self.jpg" alt="">
+                        </div>
+                        <div class="menu">
+                            <p>Hello!</p>
+                            <span class="profile"></span>
+                                <p style="padding-top:1rem;">Pages and Groups:</p>
+                                <span class="detail"></span>
+                        </div>
+                    </div>
+                    <div class="toggle-btn" style="width: 28px;">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+
+                <div class="dropdown-menu">
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">My ads</a></li>
+                    <li><a href="#">Settings</a></li>
+                </div>
+
+                <div class="modal">
+                    <div class="modal-menu"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="grid">
+                <form>
+                    <textarea placeholder="What's new, Shiyu?"></textarea>
+                    <div class="readfile">
+                        <div style="display: flex;">
+                            <label for="file-read" class="icon"><i class="fa-solid fa-image fa-lg" style="color: #bdbdbf;"></i></label>
+                            <input type="file" id="file-read" multiple required>
+                            <div class="message"></div>
+                        </div>
+                        <button type="button" class="post-btn">Post</button>
+                    </div>
+                </form>
+
+                <div class="subgrid fb"></div>
+            </section>
+        </main>
+    </body>
+
+</html>
+
