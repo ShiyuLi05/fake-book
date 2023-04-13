@@ -123,6 +123,7 @@ function isValid() {
 function clearForm() {
     text.value = '';
     file.value = ''; 
+    message.innerText = '';
 }
   
 function createPost() {
